@@ -5,10 +5,10 @@ import { MiniHeader } from "@/asyncComponents"
 <template>
     <div>
         <MiniHeader 
-        title="Projects"
-        class="sm:hidden p-2"
-        styles-for-image="size-10 rounded-full"
+            title="Contact Me"
+            class="sm:hidden p-2"
+            styles-for-image="size-10 rounded-full"
         />
-        <h1>Projects</h1>
+        <h1>Contact</h1>
     </div>
 </template>

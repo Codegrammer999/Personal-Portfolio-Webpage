@@ -18,10 +18,10 @@ defineProps({
         <div class="flex items-center space-x-6">
             <Image
                 src="./Images/me.jpg"
-                alt="An image representstion of me"
+                alt="An image representation of me"
                 :classes="stylesForImage"
             />
-            <p>Hi there! 🤗</p>
+            <p class="sm:hidden font-bold text-xl">{{ title }}</p>
         </div>
     </div>
 </template>

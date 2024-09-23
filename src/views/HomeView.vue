@@ -3,11 +3,12 @@ import { MiniHeader } from "@/asyncComponents"
 </script>
 
 <template>
-  <div class="px-4">
+  <div>
     <MiniHeader 
       title="Home"
-      class="sm:hidden"
-      stylesForImage="size-14"
+      class="sm:hidden p-2"
+      styles-for-image="size-10 rounded-full"
     />
+    <h1>Home</h1>
   </div>
 </template>
