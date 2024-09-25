@@ -6,9 +6,7 @@ import { MiniHeader } from "@/asyncComponents"
   <div>
     <MiniHeader 
       title="Home"
-      class="sm:hidden p-2"
-      styles-for-image="size-10 rounded-full"
+      class="sm:hidden p-4"
     />
-    <h1>Home</h1>
   </div>
 </template>

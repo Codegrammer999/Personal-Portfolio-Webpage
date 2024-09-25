@@ -1,27 +1,15 @@
 <script setup>
-import { Image } from "@/asyncComponents"
-
 defineProps({
     title: {
-        type: String,
-        required: false
-    },
-    stylesForImage: {
-        type: String,
-        required: false
+        type: String
     }
 })
 </script>
 
 <template>
     <div class="bg-slate-950 sm:bg-slate-800">
-        <div class="flex items-center space-x-6">
-            <Image
-                src="./Images/me.jpg"
-                alt="An image representation of me"
-                :classes="stylesForImage"
-            />
-            <p class="sm:hidden font-bold text-xl">{{ title }}</p>
+        <div class="flex items-center space-x-6" id="text-container">
+            <p class="text-xl duration-1000">{{ title }}</p>
         </div>
     </div>
 </template>

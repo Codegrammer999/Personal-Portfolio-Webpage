@@ -6,8 +6,7 @@ import { MiniHeader } from "@/asyncComponents"
     <div>
         <MiniHeader 
             title="Contact Me"
-            class="sm:hidden p-2"
-            styles-for-image="size-10 rounded-full"
+            class="sm:hidden p-4"
         />
         <h1>Contact</h1>
     </div>
