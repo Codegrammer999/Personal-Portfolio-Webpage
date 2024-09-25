@@ -27,10 +27,12 @@ const navToggler = computed(() => showMobileNav.value ? false : true)
             </button>
             <button @click="toggleNav" class="px-4 text-5xl" v-if="!navToggler">&times;</button>
         </div>
+        <!-- Desktop -->
         <nav class="bg-slate-800 h-fit p-4 hidden sm:flex items-center">
-            <MiniHeader styles-for-image="size-12 rounded-full"/>
+            <MiniHeader/>
             <NavigationLinks/>
         </nav>
+        <!-- mobile -->
         <div ref="mobileNav">
             <div class="w-1/2 absolute right-0 z-[10] p-8 h-screen bg-slate-800 sm:hidden rounded-r-2xl shadow-2xl" v-if="showMobileNav">
                 <NavigationLinks @links-clicked="toggleNav"/>

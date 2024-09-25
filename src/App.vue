@@ -14,9 +14,9 @@ onMounted(()=> {
     <Navigations/>
   </header>
   <main ref="animateRoute">
-    <RouterView />
+    <RouterView/>
   </main>
-  <footer class="py-1.5 mt-2 bg-slate-800 text-center space-y-2">
+  <footer class="py-1.5 bg-slate-800 text-center space-y-2">
     <p><b>&copy;</b>2024</p>
     <p>Coderr999</p>
   </footer>

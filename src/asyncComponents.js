@@ -40,6 +40,10 @@ export const htmlIcon = defineAsyncComponent({
     loader: () => import('@/components/icons/HtmlIcon.vue')
 })
 
+export const LinkBtn = defineAsyncComponent({
+    loader: () => import('@/components/LinkBtn.vue')
+})
+
 export const css = defineAsyncComponent({
     loader: () => import('@/components/icons/CssIcon.vue')
 })

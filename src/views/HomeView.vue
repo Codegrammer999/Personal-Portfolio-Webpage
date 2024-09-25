@@ -1,5 +1,5 @@
 <script setup>
-import { MiniHeader } from "@/asyncComponents"
+import { MiniHeader, LinkBtn } from "@/asyncComponents"
 </script>
 
 <template>
@@ -8,5 +8,41 @@ import { MiniHeader } from "@/asyncComponents"
       title="Home"
       class="sm:hidden p-4"
     />
+    <div class="min-h-screen flex items-center justify-center bg-slate-900">
+      <div class="text-center p-8">
+        <h1 class="text-4xl md:text-6xl font-bold opacity-80">Hello, I'm Daniel</h1>
+        <p class="mt-4 text-xl">Software Developer & Game Enthusiast</p>
+        <p class="mt-2">Crafting solutions with code and always learning.</p>
+        <div class="mt-8 opacity-100">
+          <LinkBtn :to="{ name: 'about'}">See more</LinkBtn>
+        </div>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 px-6 bg-slate-700 p-4">
+      <div class="bg-slate-800 p-8 rounded-lg shadow-lg">
+        <h3 class="text-xl font-semibold mb-3">Frontend Development</h3>
+        <p>Vue.js, HTML, css (Tailwind)</p>
+      </div>
+      <div class="bg-slate-800 p-8 rounded-lg shadow-lg">
+        <h3 class="text-xl font-semibold mb-3">Backend Development</h3>
+        <p>Php (Laravel), MySQL</p>
+      </div>
+      <div class="relative bg-slate-800 p-8 rounded-lg shadow-lg">
+        <h3 class="text-xl font-semibold mb-3">Game Development</h3>
+        <p>C#, Godot Engine</p>
+        <div class="absolute bottom-0 right-0 p-4">
+          <router-link 
+            :to="{ name: 'skills'}"
+            class="hover:underline hover:text-blue-500 duration-300">
+            See full
+          </router-link>
+        </div>
+      </div>
+    </div>
+    <div class="py-16 bg-slate-900 max-w-7xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Let's Collaborate!</h2>
+      <p class="mb-6">Feel free to reach out to me</p>
+      <LinkBtn :to="{ name: 'contact' }">Contact me</LinkBtn>
+    </div>
   </div>
 </template>
