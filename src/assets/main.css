@@ -1,8 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 body {
     background-color: #0f172a;
     color: #d4d0d0;
-    overflow-x: hidden;
     font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: color 0.5s, background-color 0.5s;
 }
 
 .router-link-exact-active {
@@ -16,7 +25,3 @@ body {
 .router-link-exact-active .icon {
     color: #3b82f6;
 }
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;

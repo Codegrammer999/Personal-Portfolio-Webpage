@@ -39,7 +39,7 @@ onMounted(()=> {
             title="My Skills"
             class="sm:hidden p-4 mb-2"
         />
-        <div v-if="showSkills">
+        <div v-if="showSkills" class="skills">
             <h1 class="font-semibold text-xl p-4">Languages</h1>
             <div class="flex flex-wrap justify-center items-center gap-3">
                 <div class="flex flex-col items-center w-full mx-20 sm:mx-0 rounded-xl bg-slate-950 sm:w-1/3">
