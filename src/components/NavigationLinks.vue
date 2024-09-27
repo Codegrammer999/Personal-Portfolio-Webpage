@@ -43,6 +43,16 @@ const emitClick = () => {
             </div>
         </router-link>
         <router-link 
+            :to="{ name: 'project'}"
+            class="cursor-pointer rounded-xl p-1">
+            <div class="flex space-x-2 items-center justify-center hover:opacity-50 duration-300" @click="emitClick">
+                <p>Projects</p>
+                <div class="bg-slate-900 px-2 rounded-lg">
+                    <AboutIcon class="size-6 icon"/>
+                </div>
+            </div>
+        </router-link>
+        <router-link 
             :to="{ name: 'contact'}"
             class="cursor-pointer rounded-xl p-1">
             <div class="flex space-x-2 items-center justify-center hover:opacity-50 duration-300" @click="emitClick">

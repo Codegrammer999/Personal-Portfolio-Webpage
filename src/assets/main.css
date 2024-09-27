@@ -25,3 +25,33 @@ body {
 .router-link-exact-active .icon {
     color: #3b82f6;
 }
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateX(-25%);
+        rotate: 90deg;
+        animation-timing-function: cubic-bezier(0.8,0,1,1);
+    }
+    50% {
+        rotate: 90deg;
+        transform: none;
+        animation-timing-function: cubic-bezier(0,0,0.2,1);
+    }
+}
+
+.custom-animate-bounce {
+    animation: bounce 1s infinite;
+}
+
+textarea {
+    -ms-overflow-style: none;
+    scrollbar-width: thin;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  .animate-fadeIn {
+    animation: fadeIn 2s ease-in-out;
+  }

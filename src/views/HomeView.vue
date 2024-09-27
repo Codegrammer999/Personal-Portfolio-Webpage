@@ -13,9 +13,10 @@ import { MiniHeader, LinkBtn } from "@/asyncComponents"
         <h1 class="text-4xl md:text-6xl font-bold opacity-80">Hello, I'm Daniel</h1>
         <p class="mt-4 text-xl">Software Developer & Game Enthusiast</p>
         <p class="mt-2">Crafting solutions with code and always learning.</p>
-        <div class="mt-8 opacity-100">
+        <div class="mt-8 opacity-100 cursor-pointer">
           <LinkBtn :to="{ name: 'about'}">See more</LinkBtn>
         </div>
+        <p class="text-4xl mt-6 rotate-90 font-bold opacity-40 custom-animate-bounce w-fit m-auto">&NestedGreaterGreater;</p>
       </div>
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 px-6 bg-slate-700 p-4">

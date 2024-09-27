@@ -83,3 +83,7 @@ export const laravel = defineAsyncComponent({
 export const sql = defineAsyncComponent({
     loader: () => import('@/components/icons/Sql.vue')
 })
+
+export const StatusBar = defineAsyncComponent({
+    loader: () => import('@/components/StatusBar.vue')
+})
