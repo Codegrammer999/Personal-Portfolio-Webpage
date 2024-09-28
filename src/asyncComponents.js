@@ -1,6 +1,9 @@
 import { defineAsyncComponent } from "vue"
 import NavigationSkeleton from "@/components/NavigationSkeleton.vue"
-import NavigationLinkSkeleton from "./components/NavigationLinkSkeleton.vue"
+import NavigationLinkSkeleton from "@/components/NavigationLinkSkeleton.vue"
+import CodeBlockSkeleton from "@/components/CodeBlockSkeleton.vue"
+import ProjectCardSkeleton from "@/components/ProjectCardSkeleton.vue"
+import SkillsSvgSkeleton from "@/components/SkillsSvgSkeleton.vue"
 
 export const Navigations = defineAsyncComponent({
     loader: () => import('@/components/Navigations.vue'),
@@ -29,15 +32,18 @@ export const Image = defineAsyncComponent({
 })
 
 export const Js = defineAsyncComponent({
-    loader: () => import('@/components/icons/JsIcon.vue')
+    loader: () => import('@/components/icons/JsIcon.vue'),
+    loadingComponent: SkillsSvgSkeleton
 })
 
 export const Python = defineAsyncComponent({
-    loader: () => import('@/components/icons/PythonIcon.vue')
+    loader: () => import('@/components/icons/PythonIcon.vue'),
+    loadingComponent: SkillsSvgSkeleton
 })
 
 export const htmlIcon = defineAsyncComponent({
-    loader: () => import('@/components/icons/HtmlIcon.vue')
+    loader: () => import('@/components/icons/HtmlIcon.vue'),
+    loadingComponent: SkillsSvgSkeleton
 })
 
 export const LinkBtn = defineAsyncComponent({
@@ -45,45 +51,65 @@ export const LinkBtn = defineAsyncComponent({
 })
 
 export const css = defineAsyncComponent({
-    loader: () => import('@/components/icons/CssIcon.vue')
+    loader: () => import('@/components/icons/CssIcon.vue'),
+    loadingComponent: SkillsSvgSkeleton
 })
 
 export const Csharp = defineAsyncComponent({
-    loader: () => import('@/components/icons/CsharpIcon.vue')
+    loader: () => import('@/components/icons/CsharpIcon.vue'),
+    loadingComponent: SkillsSvgSkeleton
 })
 
 export const git = defineAsyncComponent({
-    loader: () => import('@/components/icons/GitIcon.vue')
+    loader: () => import('@/components/icons/GitIcon.vue'),
+    loadingComponent: SkillsSvgSkeleton
 })
 
 export const github = defineAsyncComponent({
-    loader: () => import('@/components/icons/GithubIcon.vue')
+    loader: () => import('@/components/icons/GithubIcon.vue'),
+    loadingComponent: SkillsSvgSkeleton
 })
 
 export const mysql = defineAsyncComponent({
-    loader: () => import('@/components/icons/MysqlIcon.vue')
+    loader: () => import('@/components/icons/MysqlIcon.vue'),
+    loadingComponent: SkillsSvgSkeleton
 })
 
 export const vue = defineAsyncComponent({
-    loader: () => import('@/components/icons/vueLogo.vue')
+    loader: () => import('@/components/icons/vueLogo.vue'),
+    loadingComponent: SkillsSvgSkeleton
 })
 
 export const taiwind = defineAsyncComponent({
-    loader: () => import('@/components/icons/TailwindIcon.vue')
+    loader: () => import('@/components/icons/TailwindIcon.vue'),
+    loadingComponent: SkillsSvgSkeleton
 })
 
 export const php = defineAsyncComponent({
-    loader: () => import('@/components/icons/PhpIcon.vue')
+    loader: () => import('@/components/icons/PhpIcon.vue'),
+    loadingComponent: SkillsSvgSkeleton
 })
 
 export const laravel = defineAsyncComponent({
-    loader: () => import('@/components/icons/Laravel.vue')
+    loader: () => import('@/components/icons/Laravel.vue'),
+    loadingComponent: SkillsSvgSkeleton
 })
 
 export const sql = defineAsyncComponent({
-    loader: () => import('@/components/icons/Sql.vue')
+    loader: () => import('@/components/icons/Sql.vue'),
+    loadingComponent: SkillsSvgSkeleton
 })
 
 export const StatusBar = defineAsyncComponent({
     loader: () => import('@/components/StatusBar.vue')
+})
+
+export const ProjectCard = defineAsyncComponent({
+    loader: () => import('@/components/ProjectCard.vue'),
+    loadingComponent: ProjectCardSkeleton
+})
+
+export const CodeBlock = defineAsyncComponent({
+    loader: () => import('@/components/CodeBlock.vue'),
+    loadingComponent: CodeBlockSkeleton
 })

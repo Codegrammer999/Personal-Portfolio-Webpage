@@ -1,5 +1,5 @@
 <script setup>
-import CodeBlock from './CodeBlock.vue'
+import { CodeBlock } from "@/asyncComponents"
 
 defineProps({
     project: {
@@ -11,7 +11,7 @@ defineProps({
 
 <template>
     <div class="bg-slate-800 p-6 rounded-lg shadow-lg mb-6">
-        <h3 class="text-2xl font-bold mb-2">{{ project.name }}</h3>
+        <h3 class="text-lg font-bold mb-2">{{ project.name }}</h3>
         <p class="text-slate-400 mb-4">{{ project.description }}</p>
         <div class="mb-4">
             <strong>Technologies:</strong>
@@ -24,7 +24,7 @@ defineProps({
             :code="project.codeSnippet"
         />
         <a
-            class="inline-block bg-slate-600 text-white px-4 py-2 rounded mt-4"
+            class="inline-block bg-slate-600 text-white px-4 py-2 rounded mt-4 hover:bg-slate-900 duration-500 focus:ring-2 ring-blue-500 hover:shadow-xl"
             :href="project.githubLink"
             target="_blank"
             >

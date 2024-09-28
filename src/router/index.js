@@ -28,6 +28,11 @@ const router = createRouter({
       name: 'contact',
       component: () => import('@/views/ContactView.vue')
     },
+    {
+      path: '/:catchAll(.*)',
+      name: '404',
+      component: () => import('@/views/404.vue')
+    }
   ]
 })
 
