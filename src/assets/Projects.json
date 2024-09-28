@@ -1,0 +1,8 @@
+{
+    "name": "To-Do List Console App.",
+    "description": "A simple console-based to-do list application built with C#.",
+    "technologies": ["C#", "Console"],
+    "githubLink": "",
+    "codeSnippet": "",
+    "codeSnippetLang": ""
+}

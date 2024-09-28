@@ -19,7 +19,7 @@ import { MiniHeader, LinkBtn } from "@/asyncComponents"
         <p class="text-4xl mt-6 rotate-90 font-bold opacity-40 custom-animate-bounce w-fit m-auto">&NestedGreaterGreater;</p>
       </div>
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 px-6 bg-slate-700 p-4">
+    <div class="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 px-6 bg-slate-700 py-14">
       <div class="bg-slate-800 p-8 rounded-lg shadow-lg">
         <h3 class="text-xl font-semibold mb-3">Frontend Development</h3>
         <p>Vue.js, HTML, css (Tailwind)</p>
@@ -28,16 +28,15 @@ import { MiniHeader, LinkBtn } from "@/asyncComponents"
         <h3 class="text-xl font-semibold mb-3">Backend Development</h3>
         <p>Php (Laravel), MySQL</p>
       </div>
-      <div class="relative bg-slate-800 p-8 rounded-lg shadow-lg">
+      <div class="bg-slate-800 p-8 rounded-lg shadow-lg">
         <h3 class="text-xl font-semibold mb-3">Game Development</h3>
         <p>C#, Godot Engine</p>
-        <div class="absolute bottom-0 right-0 p-4">
-          <router-link 
-            :to="{ name: 'skills'}"
-            class="hover:underline hover:text-blue-500 duration-300">
-            See full
-          </router-link>
-        </div>
+      </div>
+      <div class="absolute bottom-4 right-4">
+        <LinkBtn 
+          :to="{ name: 'skills'}">
+          See more...
+        </LinkBtn>
       </div>
     </div>
     <div class="py-16 bg-slate-900 max-w-7xl mx-auto text-center">

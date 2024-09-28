@@ -60,7 +60,7 @@ const sendMessage = () => {
                     <button class="bg-blue-500 px-8 py-2 rounded-lg font-medium shadow-md hover:bg-blue-600 focus:ring-2 ring-slate-200 transition duration-300 w-full">Send Message</button>
                 </div>
             </form>
-            <div class="py-6 text-center bg-slate-800 mt-4 rounded-lg">
+            <div class="py-6 text-center bg-slate-700 mt-4 rounded-lg">
                 <h2 class="text-xl font-bold">Alternatives</h2>
                 <p class="p-2">If the form says limit exceeded or you wish to use another option, you can contact me using the following below...</p>
                 <div>
