@@ -6,13 +6,5 @@
         "githubLink": "https://github.com/Codegrammer999/Personal-Portfolio-Webpage.git",
         "codeSnippet": "<!--Check out my github repo-->",
         "codeSnippetLang": "html"
-    },
-    {
-        "name": "To-Do List Console App.",
-        "description": "A simple console-based to-do list application built with C#.",
-        "technologies": ["C#", "Console"],
-        "githubLink": "https://github/Codegrammer999/to-doListApp",
-        "codeSnippet": "using System; \n int me = 2",
-        "codeSnippetLang": "html"
     }
 ]

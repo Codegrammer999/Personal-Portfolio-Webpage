@@ -52,27 +52,33 @@ const sendMail = () => {
             messageField.value.focus()
             break
         default:
-            try {
-                isProcessing.value = true
-                formData.error = null
+            isProcessing.value = true
+            formData.error = null
+
+            if (navigator.onLine) {
                 emailjs.sendForm('service_2oxp01k', 'template_mdtwk1c', form.value, {
                 publicKey: 'MxkwwylMO2r8cq-iy'
                 }).then((data)=>{
                     if (data.status === 200 && data.text === 'OK') {
                         emailMsg.value = 'Message received. thanks for reaching out'
+                        isProcessing.value = false
+                        formData.email = ''
+                        formData.name = ''
+                        formData.message = ''
+                        formData.error = null
                         return
                     }
-                    console.log(data)
+                    console.log(data) //log for future use or debugging
                 }, (error)=> {
-                    emailMsg.value = 'Something went wrong! ' + error.text
+                    emailMsg.value = `Something went wrong: ${error.text} \n Please use the alternatives below to contact me if issue persist.`
                     console.error(error)
+                    isProcessing.value = false
                 })
-            } catch (error) {
-                emailMsg.value = error
-                console.log(error)
-            }finally {
-                isProcessing.value = false
+                return
             }
+
+            emailMsg.value = 'No internet connection!, Please try again later'
+            isProcessing.value = false
     }
 }
 </script>
