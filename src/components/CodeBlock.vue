@@ -39,8 +39,8 @@ const copyToClipBoard = () => {
     .then(()=> {
         copyToClipBoardMsg.value = 'Copied!'
     })
-    .catch(()=> {
-        copyToClipBoardMsg.value = 'Error copying to clipboard!'
+    .catch((error)=> {
+        copyToClipBoardMsg.value = 'Error copying to clipboard!' + error
     })
 }
 </script>
