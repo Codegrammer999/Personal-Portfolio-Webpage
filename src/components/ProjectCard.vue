@@ -37,7 +37,7 @@ defineProps({
                 View on GitHub
             </a>
 
-            <div v-else>
+            <div v-else class="flex justify-center space-x-2">
                 <a
                     v-if="project.githubLink.frontend"
                     class="inline-block bg-slate-600 text-white px-4 py-2 rounded hover:bg-slate-900 duration-500 focus:ring-2 ring-blue-500 hover:shadow-xl"
