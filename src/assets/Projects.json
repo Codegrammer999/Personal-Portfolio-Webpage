@@ -6,5 +6,24 @@
         "githubLink": "https://github.com/Codegrammer999/Personal-Portfolio-Webpage.git",
         "codeSnippet": "<!--Check out my github repo-->",
         "codeSnippetLang": "html"
+    },
+    {
+        "name": "Smart Food - E-commerce Grocery Store",
+        "description": "An e-commerce grocery store where users can browse and purchase food items. Built using Vue for frontend, Laravel for backend, and uses AutoAnimate for smooth UI transitions.",
+        "technologies": ["Vue.js", "Laravel", "AutoAnimate"],
+        "githubLink": {
+            "frontend": "https://github.com/Codegrammer999/SmartFood",
+            "backend": "https://github.com/Codegrammer999/SmartFood-Backend"
+        },
+        "codeSnippet": "// Cart logic using Vue reactive states",
+        "codeSnippetLang": "javascript"
+    },
+    {
+        "name": "Simple Text Editor",
+        "description": "A very basic text editor built out of boredom. It has minimal features and was a fun mini project.",
+        "technologies": ["HTML", "CSS", "Javascript"],
+        "githubLink": "https://github.com/Codegrammer999/Simple-Text-Editor",
+        "codeSnippet": "<textarea placeholder='Start typing...'></textarea>",
+        "codeSnippetLang": "html"
     }
-]
+        ]
