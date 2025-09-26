@@ -19,12 +19,12 @@ defineProps({
 </script>
 
 <template>
-    <div class="mb-4">
-        <div class="flex justify-between mb-1">
-            <span>{{ language }}</span>
-            <span>{{ level }}</span>
+    <div class="mb-6">
+        <div class="flex justify-between mb-3">
+            <span class="font-semibold text-white">{{ language }}</span>
+            <span class="text-slate-400 font-medium">{{ level }}</span>
         </div>
-        <div class="w-full bg-slate-700 rounded-full h-2">
+        <div class="w-full bg-slate-700 rounded-full h-3 overflow-hidden">
             <div :class="classes" :style="width"></div>
         </div>
     </div>

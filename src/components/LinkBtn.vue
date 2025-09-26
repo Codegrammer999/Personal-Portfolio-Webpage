@@ -9,7 +9,7 @@ defineProps({
 <template>
      <router-link 
         :to="to"
-        class="bg-blue-500 px-6 py-3 rounded-lg font-medium shadow-md hover:bg-blue-600 focus:ring-2 ring-slate-200 transition duration-300">
+        class="modern-btn inline-block text-center">
         <slot/>
       </router-link>
 </template>

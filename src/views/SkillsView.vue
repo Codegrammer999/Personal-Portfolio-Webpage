@@ -17,68 +17,80 @@ onMounted(()=> {
             title="My Skills"
             class="sm:hidden p-4 mb-2"
         />
-        <div class="w-fit m-auto py-4">
-            <h1 class="font-semibold text-xl px-2 sm:px-0">Languages</h1>
-            <div class="flex flex-wrap justify-center items-center gap-3 bg-slate-700 p-4 rounded-lg m-2 sm:max-w-screen-sm md:max-w-screen-md xl:max-w-screen-lg 2xl:max-w-screen-xl">
-                <div class="flex flex-col items-center w-full mx-20 sm:mx-0 rounded-xl bg-slate-800 sm:w-1/3 shadow-lg">
-                    <p v-text="html"></p>
+        <div class="max-w-7xl mx-auto py-8 px-4">
+            <h1 class="text-4xl font-bold text-center mb-16 gradient-text">My Technical Arsenal</h1>
+            
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold mb-8 text-center text-white">Languages</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <div class="modern-card flex flex-col items-center p-6 rounded-2xl group hover:scale-105 transition-all duration-300">
+                        <p class="text-lg font-semibold mb-4 text-white" v-text="html"></p>
                     <htmlIcon class="size-40"/>
                 </div>
-                <div class="flex flex-col items-center w-full mx-20 sm:mx-0 rounded-xl bg-slate-800 sm:w-1/3 shadow-lg">
-                    <p>Css</p>
+                    <div class="modern-card flex flex-col items-center p-6 rounded-2xl group hover:scale-105 transition-all duration-300">
+                        <p class="text-lg font-semibold mb-4 text-white">CSS</p>
                     <css class="size-40"/>
                 </div>
-                <div class="flex flex-col items-center w-full mx-20 sm:mx-0 rounded-xl bg-slate-800 sm:w-1/3 shadow-lg">
-                    <p class="p-1">Javascript</p>
+                    <div class="modern-card flex flex-col items-center p-6 rounded-2xl group hover:scale-105 transition-all duration-300">
+                        <p class="text-lg font-semibold mb-4 text-white">JavaScript</p>
                     <Js class="size-40"/>
                 </div>
-                <div class="flex flex-col items-center w-full mx-20 sm:mx-0 rounded-xl bg-slate-800 sm:w-1/3 shadow-lg">
-                    <p>Php</p>
+                    <div class="modern-card flex flex-col items-center p-6 rounded-2xl group hover:scale-105 transition-all duration-300">
+                        <p class="text-lg font-semibold mb-4 text-white">PHP</p>
                     <php class="size-40"/>
                 </div>
-                <div class="flex flex-col items-center w-full mx-20 sm:mx-0 rounded-xl bg-slate-800 sm:w-1/3 shadow-lg">
-                    <p>C#</p>
+                    <div class="modern-card flex flex-col items-center p-6 rounded-2xl group hover:scale-105 transition-all duration-300">
+                        <p class="text-lg font-semibold mb-4 text-white">C#</p>
                     <Csharp class="size-40"/>
                 </div>
-                <div class="flex flex-col items-center w-full mx-20 sm:mx-0 rounded-xl bg-slate-800 sm:w-1/3 shadow-lg">
-                    <p>Python</p>
+                    <div class="modern-card flex flex-col items-center p-6 rounded-2xl group hover:scale-105 transition-all duration-300">
+                        <p class="text-lg font-semibold mb-4 text-white">Python</p>
                     <Python class="size-40"/>
                 </div>
-                <div class="flex flex-col items-center w-full mx-20 sm:mx-0 rounded-xl bg-slate-800 sm:w-1/3 shadow-lg">
-                    <p>Sql</p>
+                    <div class="modern-card flex flex-col items-center p-6 rounded-2xl group hover:scale-105 transition-all duration-300">
+                        <p class="text-lg font-semibold mb-4 text-white">SQL</p>
                     <sql class="size-40"/>
                 </div>
             </div>
-            <h2 class="font-semibold text-xl px-2 sm:px-0">Frameworks</h2>
-            <div class="flex flex-wrap justify-center items-center gap-3 bg-slate-700 p-4 rounded-lg m-2 sm:max-w-screen-sm md:max-w-screen-md xl:max-w-screen-lg 2xl:max-w-screen-xl">
-                <div class="flex flex-col items-center w-full mx-20 sm:mx-0 rounded-xl bg-slate-800 sm:w-1/3 shadow-lg">
-                    <p>Laravel</p>
+            </div>
+            
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold mb-8 text-center text-white">Frameworks & Libraries</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="modern-card flex flex-col items-center p-6 rounded-2xl group hover:scale-105 transition-all duration-300">
+                        <p class="text-lg font-semibold mb-4 text-white">Laravel</p>
                     <laravel class="size-40"/>
                 </div>
-                <div class="flex flex-col items-center w-full mx-20 sm:mx-0 rounded-xl bg-slate-800 sm:w-1/3 shadow-lg">
-                    <p>Vue.Js</p>
+                    <div class="modern-card flex flex-col items-center p-6 rounded-2xl group hover:scale-105 transition-all duration-300">
+                        <p class="text-lg font-semibold mb-4 text-white">Vue.js</p>
                     <vue class="size-40"/>
                 </div>
-                <div class="flex flex-col items-center w-full mx-20 sm:mx-0 rounded-xl bg-slate-800 sm:w-1/3 shadow-lg">
-                    <p>Tailwind</p>
+                    <div class="modern-card flex flex-col items-center p-6 rounded-2xl group hover:scale-105 transition-all duration-300">
+                        <p class="text-lg font-semibold mb-4 text-white">Tailwind CSS</p>
                     <taiwind class="size-40"/>
                 </div>
             </div>
-            <h3 class="font-semibold text-xl px-2 sm:px-0">Database</h3>
-            <div class="flex flex-wrap justify-center items-center gap-3 bg-slate-700 p-4 rounded-lg m-2 sm:max-w-screen-sm md:max-w-screen-md xl:max-w-screen-lg 2xl:max-w-screen-xl">
-                <div class="flex flex-col items-center w-full mx-20 sm:mx-0 rounded-xl bg-slate-800 sm:w-1/3 shadow-lg">
-                    <p>Mysql</p>
+            </div>
+            
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold mb-8 text-center text-white">Database</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="modern-card flex flex-col items-center p-6 rounded-2xl group hover:scale-105 transition-all duration-300">
+                        <p class="text-lg font-semibold mb-4 text-white">MySQL</p>
                     <mysql class="size-40"/>
                 </div>
             </div>
-            <h4 class="font-semibold text-xl px-2 sm:px-0">Version Control</h4>
-            <div class="flex flex-wrap justify-center items-center gap-3 bg-slate-700 p-4 rounded-lg m-2 sm:max-w-screen-sm md:max-w-screen-md xl:max-w-screen-lg 2xl:max-w-screen-xl">
-                <div class="flex flex-col items-center w-full mx-20 sm:mx-0 rounded-xl bg-slate-800 sm:w-1/3 shadow-lg">
-                    <p>Git</p>
+            </div>
+            
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold mb-8 text-center text-white">Version Control</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="modern-card flex flex-col items-center p-6 rounded-2xl group hover:scale-105 transition-all duration-300">
+                        <p class="text-lg font-semibold mb-4 text-white">Git</p>
                     <git class="size-40"/>
                 </div>
-                <div class="flex flex-col items-center w-full mx-20 sm:mx-0 rounded-xl bg-slate-800 sm:w-1/3 shadow-lg">
-                    <p>Github</p>
+                    <div class="modern-card flex flex-col items-center p-6 rounded-2xl group hover:scale-105 transition-all duration-300">
+                        <p class="text-lg font-semibold mb-4 text-white">GitHub</p>
                     <github class="size-40"/>
                 </div>
             </div>
