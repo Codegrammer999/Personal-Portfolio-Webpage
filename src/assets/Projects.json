@@ -2,7 +2,11 @@
     {
         "name": "Portfolio Website",
         "description": "A personal portfolio website showcasing various projects, built with html css(Tailwind) and javascript(Vue.js) with some other libraries like AutoAnimate, highlight.js etc.",
-        "technologies": ["HTML", "CSS", "Javascript"],
+        "technologies": [
+            "HTML",
+            "CSS",
+            "Javascript"
+        ],
         "githubLink": "https://github.com/Codegrammer999/Personal-Portfolio-Webpage.git",
         "codeSnippet": "<!--Check out my github repo-->",
         "codeSnippetLang": "html"
@@ -10,7 +14,11 @@
     {
         "name": "Smart Food - E-commerce Grocery Store",
         "description": "An e-commerce grocery store where users can browse and purchase food items. Built using Vue for frontend, Laravel for backend, and uses AutoAnimate for smooth UI transitions.",
-        "technologies": ["Vue.js", "Laravel", "AutoAnimate"],
+        "technologies": [
+            "Vue.js",
+            "Laravel",
+            "AutoAnimate"
+        ],
         "githubLink": {
             "frontend": "https://github.com/Codegrammer999/SmartFood",
             "backend": "https://github.com/Codegrammer999/SmartFood-Backend"
@@ -21,9 +29,34 @@
     {
         "name": "Simple Text Editor",
         "description": "A very basic text editor built out of boredom. It has minimal features and was a fun mini project.",
-        "technologies": ["HTML", "CSS", "Javascript"],
+        "technologies": [
+            "HTML",
+            "CSS",
+            "Javascript"
+        ],
         "githubLink": "https://github.com/Codegrammer999/Simple-Text-Editor",
         "codeSnippet": "<textarea placeholder='Start typing...'></textarea>",
         "codeSnippetLang": "html"
+    },
+    {
+        "name": "Simple TicTacToe Game",
+        "description": "This is a simple TicTacToe game made with Python. Inspiration was gotten from a Python tutorial book.",
+        "technologies": [
+            "Python"
+        ],
+        "githubLink": "https://github.com/Codegrammer999/TicTacToe",
+        "codeSnippet": "// checkout github repo",
+        "codeSnippetLang": "python"
+    },
+    {
+        "name": "Object Detection",
+        "description": "This is a simple object detection program using CV2",
+        "technologies": [
+            "Python",
+            "OpenCV"
+        ],
+        "githubLink": "https://github.com/Codegrammer999/simple-object-detection",
+        "codeSnippet": "import cv2 \nimport numpy as np \nimport time \n//................\n// check out github repo",
+        "codeSnippetLang": "python"
     }
-        ]
+]
