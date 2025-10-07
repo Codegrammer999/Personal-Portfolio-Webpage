@@ -3,7 +3,7 @@ import { MiniHeader, Js, php, laravel, css, Csharp, htmlIcon, vue, taiwind, mysq
 import autoAnimate from "@formkit/auto-animate"
 import { onMounted, ref } from "vue"
 
-const html = ref('Html </>')
+const html = ref('HTML')
 const animateSvgs = ref(null)
 
 onMounted(()=> {
