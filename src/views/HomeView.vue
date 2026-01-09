@@ -31,7 +31,7 @@ import { MiniHeader, LinkBtn } from "@/asyncComponents";
             <div
               class="w-full h-full rounded-full bg-slate-900 flex items-center justify-center"
             >
-              <img src="/Images/me.jpg" alt="me" loading="lazy" class="size-full">
+              <img src="/Images/me.jpg" alt="me" loading="lazy" class="size-full rounded-full">
             </div>
           </div>
         </div>
