@@ -10,22 +10,22 @@ import { MiniHeader, StatusBar, LinkBtn } from "@/asyncComponents"
         />
         <div class="sm:max-w-[600px] md:max-w-screen-md xl:max-w-screen-lg m-auto pb-8 pt-8">
             <div class="modern-card p-8 text-white mb-8 rounded-2xl mx-4 sm:mx-0 animate-slideUp">
-            <h1 class="text-4xl font-bold mb-8 gradient-text">About Me</h1>
-            <p class="mb-6 text-lg leading-relaxed text-slate-300">
-                Ever since I was a kid, I’ve been fascinated by how technology works. Watching hackers aggressively 
-                type away on their keyboards in movies, with random green lines flashing on the screen, left me 
-                wondering how it all comes together. That curiosity led me to pursue a career in technology and 
-                computer science, and I’ve been hooked ever since.
-            </p>
-            <p class="mb-6 text-lg leading-relaxed text-slate-300">
-                My long-term goal is to either start my own tech company or join an innovative one where I can 
-                provide solutions to real-world problems. I’ve got a vision board to keep me motivated, and as long 
-                as I’m making a difference, I’m always up for the challenge.
-            </p>
-            <p class="mb-6 text-lg leading-relaxed text-slate-300">
-                When I’m not deep into code, I love watching movies. It’s a great way to unwind and stay inspired, 
-                especially when tech and futuristic concepts show up on screen.
-            </p>
+                <h1 class="text-4xl font-bold mb-8 gradient-text">About Me</h1>
+                 <p class="mb-6 text-lg leading-relaxed text-slate-300">
+                    I’m a problem-driven developer who enjoys turning ideas into functional, real-world software. I don’t just 
+                    write code for the sake of it — I like understanding how systems work, why they break, and how to make them 
+                    better. For me, programming is less about syntax and more about thinking clearly and building with purpose.
+                </p>
+                <p class="mb-6 text-lg leading-relaxed text-slate-300">
+                    I’m constantly learning, experimenting, and pushing myself to grow beyond my current limits. Whether it’s 
+                    backend logic, frontend experience, or system design, I’m focused on becoming well-rounded and effective. 
+                    My goal is to work on products that actually matter — tools people rely on, not just flashy demos.
+                </p>
+                <p class="mb-6 text-lg leading-relaxed text-slate-300">
+                    When I step away from the screen, I reset by watching movies, reading and exploring creative ideas. It helps me stay 
+                    balanced, inspired, and mentally sharp — which ultimately makes me a better builder when I’m back in front 
+                    of my editor.
+                </p>
             </div>
             <div class="modern-card p-8 text-white mb-8 rounded-2xl mx-4 sm:mx-0 animate-slideUp" style="animation-delay: 0.2s;">
             <h2 class="text-3xl font-bold mb-6 gradient-text">My Skills</h2>
@@ -61,22 +61,23 @@ import { MiniHeader, StatusBar, LinkBtn } from "@/asyncComponents"
             </div>
             </div>
             <div class="modern-card p-8 text-white mb-8 rounded-2xl mx-4 sm:mx-0 animate-slideUp" style="animation-delay: 0.4s;">
-            <h2 class="text-3xl font-bold mb-6 gradient-text">Current Project</h2>
-            <div class="glass p-6 rounded-2xl">
-                <p class="text-lg leading-relaxed text-slate-300">
-                I'm developing a social media application for students in my institution, integrating the student 
-                portal for payments and other features. It will also provide a platform for cyber cafes to easily 
-                connect with students, share files, and discuss services.
-                </p>
-            </div>
-            <div class="text-center pt-6">
-                <p class="text-lg mb-6 text-slate-300">Want to find out more?</p>
-                <LinkBtn
-                    :to="{ name: 'contact'}">
-                    Let's Connect
-                </LinkBtn>
-            </div>
-            </div>
+                <h2 class="text-3xl font-bold mb-6 gradient-text">What I’m Focused On</h2>
+                <div class="glass p-6 rounded-2xl">
+                    <p class="text-lg leading-relaxed text-slate-300">
+                        Right now, I’m sharpening my skills by building scalable, real-world applications and improving how I 
+                        design systems from the ground up. I’m focused on writing cleaner code, structuring projects better, 
+                        and understanding how products evolve from simple ideas into reliable platforms people can trust.
+                    </p>
+                </div>
+                <div class="text-center pt-6">
+                    <p class="text-lg mb-6 text-slate-300">
+                        Interested in collaborating or discussing ideas?
+                    </p>
+                    <LinkBtn :to="{ name: 'contact' }">
+                        Get in Touch
+                    </LinkBtn>
+                </div>
+        </div>
         </div>
     </div>
 </template>
