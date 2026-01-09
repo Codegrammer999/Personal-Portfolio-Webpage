@@ -1,15 +1,33 @@
 [
     {
-        "name": "Portfolio Website",
-        "description": "A personal portfolio website showcasing various projects, built with html css(Tailwind) and javascript(Vue.js) with some other libraries like AutoAnimate, highlight.js etc.",
+        "name": "Whatsapp Bot",
+        "description": "This is an artificial inteliigence whatsapp bot integrated with gemini 2.5 flash",
         "technologies": [
-            "HTML",
-            "CSS",
-            "Javascript"
+            "Nodejs",
+            "Javascript",
+            "WhatsApp Web API"
         ],
-        "githubLink": "https://github.com/Codegrammer999/Personal-Portfolio-Webpage.git",
-        "codeSnippet": "<!--Check out my github repo-->",
-        "codeSnippetLang": "html"
+        "githubLink": "https://github.com/Codegrammer999/Whatsapp-Bot.git",
+        "codeSnippet": "const qrcode = require('qrcode-terminal');\nconst { Client, LocalAuth } = require('whatsapp-web.js');\nconst client = new Client({ authStrategy: new LocalAuth() });\nclient.on('qr', qr => {\n  qrcode.generate(qr, { small: true });\n});\nclient.on('ready', () => {\n  console.log('Client is ready!');\n});\nclient.initialize();",
+        "codeSnippetLang": "javascript"
+    },
+    {
+        "name": "EchoBlog",
+        "description": "A full blogging platform created with nuxtjs and laravel",
+        "codeSnippet": "// checkout github repo",
+        "technologies": [
+            "Nuxtjs",
+            "TypeScript",
+            "Tailwindcss",
+            "NuxtUI",
+            "Laravel",
+            "Blade"
+        ],
+        "githubLink": {
+            "frontend": "https://github.com/Codegrammer999/EchoBlog-Client.git",
+            "backend": "https://github.com/Codegrammer999/EchoBlog-Server.git"
+        },
+        "codeSnippetLang": "javascript"
     },
     {
         "name": "Smart Food - E-commerce Grocery Store",
@@ -49,6 +67,16 @@
         "codeSnippetLang": "python"
     },
     {
+        "name": "Tic-Tac-Toe Game",
+        "description": "This is a simple TicTacToe game made with Python. Inspiration was gotten from a Python tutorial book",
+        "technologies": [
+            "Python"
+        ],
+        "githubLink": "https://github.com/Codegrammer999/TicTacToe.git",
+        "codeSnippet": "# checkout github repo",
+        "codeSnippetLang": "python"
+    },
+    {
         "name": "Object Detection",
         "description": "This is a simple object detection program using CV2",
         "technologies": [
@@ -58,5 +86,17 @@
         "githubLink": "https://github.com/Codegrammer999/simple-object-detection",
         "codeSnippet": "import cv2 \nimport numpy as np \nimport time \n//................\n// check out github repo",
         "codeSnippetLang": "python"
+    },
+    {
+        "name": "Portfolio Website",
+        "description": "A personal portfolio website showcasing various projects, built with html css(Tailwind) and javascript(Vue.js) with some other libraries like AutoAnimate, highlight.js etc.",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "Javascript"
+        ],
+        "githubLink": "https://github.com/Codegrammer999/Personal-Portfolio-Webpage.git",
+        "codeSnippet": "<!--Check out my github repo-->",
+        "codeSnippetLang": "html"
     }
 ]

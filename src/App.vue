@@ -5,6 +5,7 @@ import { onMounted, ref } from "vue";
 import ScrollToTop from "./components/ScrollToTop.vue";
 
 const animateRoute = ref(null);
+
 onMounted(() => {
   animateRoute.value && autoAnimate(animateRoute.value);
 });

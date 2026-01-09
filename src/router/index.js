@@ -1,4 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import NProgress from 'nprogress'
+
+NProgress.configure({
+  showSpinner: false,
+  trickleSpeed: 120,
+  minimum: 0.2,
+})
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -34,6 +41,14 @@ const router = createRouter({
       component: () => import('@/views/404.vue')
     }
   ]
+})
+
+router.beforeEach(() => {
+  NProgress.start()
+})
+
+router.afterEach(() => {
+  NProgress.done()
 })
 
 export default router

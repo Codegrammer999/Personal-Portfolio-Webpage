@@ -95,6 +95,16 @@ export const laravel = defineAsyncComponent({
     loadingComponent: SkillsSvgSkeleton
 })
 
+export const fastapi = defineAsyncComponent({
+    loader: () => import('@/components/icons/fastapi.vue'),
+    loadingComponent: SkillsSvgSkeleton
+})
+
+export const psql = defineAsyncComponent({
+    loader: () => import('@/components/icons/psql.vue'),
+    loadingComponent: SkillsSvgSkeleton
+})
+
 export const sql = defineAsyncComponent({
     loader: () => import('@/components/icons/Sql.vue'),
     loadingComponent: SkillsSvgSkeleton
