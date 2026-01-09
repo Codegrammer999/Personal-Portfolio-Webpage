@@ -5,7 +5,6 @@ Showcasing projects, skills, and experience with beautiful animations and respon
 
 ![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=flat&logo=tailwind-css)
 ![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=flat&logo=vue.js)
-![MIT License](https://img.shields.io/badge/License-MIT-green.svg)
 
 ---
 
@@ -42,7 +41,7 @@ npm run dev
 
 ## 🌐 Demo
 
-Live preview: [Your Portfolio Demo](https://personal-portfolio-webpage-liart.vercel.app/)
+Live preview: [My Portfolio Demo](https://personal-portfolio-webpage-liart.vercel.app/)
 
 ---
 
@@ -50,9 +49,3 @@ Live preview: [Your Portfolio Demo](https://personal-portfolio-webpage-liart.ver
 
 Questions or feedback?  
 Reach me at [shyyguyy501@gmail.com](mailto:shyyguyy501@gmail.com)
-
----
-
-## 📝 License
-
-This project is licensed under the MIT License.
