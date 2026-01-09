@@ -77,8 +77,13 @@ onMounted(()=> {
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div class="modern-card flex flex-col items-center p-6 rounded-2xl group hover:scale-105 transition-all duration-300">
                         <p class="text-lg font-semibold mb-4 text-white">MySQL</p>
-                    <mysql class="size-40"/>
-                </div>
+                        <mysql class="size-40"/>
+                    </div>
+
+                <!-- <div class="modern-card flex flex-col items-center p-6 rounded-2xl group hover:scale-105 transition-all duration-300">
+                    <p class="text-lg font-semibold mb-4 text-white">PostgreSQL</p>
+                    <psql class="size-40"/>
+                </div> -->
             </div>
             </div>
             
